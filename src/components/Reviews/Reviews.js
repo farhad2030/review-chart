@@ -1,10 +1,10 @@
 import React from "react";
 import Card from "../Card/Card";
-import { UseReviews } from "../../hooks/ReviewsHook/UseReviews";
+import useReviews from "../../hooks/ReviewsHook/UseReviews";
 
 const Reviews = () => {
   const url = "data/review.json";
-  const reviewData = UseReviews(url);
+  const reviewData = useReviews(url);
   return (
     <div className="row p-5">
       {reviewData.map((review) => {

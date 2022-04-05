@@ -1,10 +1,9 @@
 import React from "react";
 import Card from "../Card/Card";
-import { UseReviews } from "../../hooks/ReviewsHook/UseReviews";
-
+import useReviews from "../../hooks/ReviewsHook/UseReviews";
 function Home() {
   const url = "data/review.json";
-  const reviewData = UseReviews(url);
+  const reviewData = useReviews(url);
   return (
     <div className="container p-5">
       <div className="row p-5">

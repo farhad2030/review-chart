@@ -1,6 +1,6 @@
 const { useEffect, useState } = require("react");
 
-export const UseReviews = (url) => {
+const useReviews = (url) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -10,3 +10,5 @@ export const UseReviews = (url) => {
   }, [url]);
   return data;
 };
+
+export default useReviews;
