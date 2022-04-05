@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../Card/Card";
 import useReviews from "../../hooks/ReviewsHook/UseReviews";
+import { Link } from "react-router-dom";
 function Home() {
   const url = "data/review.json";
   const reviewData = useReviews(url);
@@ -28,9 +29,9 @@ function Home() {
           );
         })}
       </div>
-      <button type="button" className="btn btn-secondary mt-3">
+      <Link to="/reviews" className="btn btn-secondary mt-3">
         All rewiews
-      </button>
+      </Link>
     </div>
   );
 }
