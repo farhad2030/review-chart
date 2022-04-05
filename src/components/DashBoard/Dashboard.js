@@ -23,7 +23,6 @@ const Dashboard = () => {
         setData(result);
       });
   }, []);
-  console.log(data);
   return (
     <div className="row">
       <div className="col-md-6">
